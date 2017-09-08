@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
   <title>Vivaldi Bug Test</title>
 </head>
-<select id="select">
+<select name="test">
   <option value="test" selected>test</option>
   <option value="1">1</option>
 </select>
 
-<script>
-  $('select').on('change', function() {
+<script language="javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('select[name=test]').onchange=function(){
     alert('test');
-  });
+  }
+}, false);
 </script>
 </html>
