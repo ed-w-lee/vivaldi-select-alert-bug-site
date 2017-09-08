@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <title>Vivaldi Bug Test</title>
+</head>
+<select id="select">
+  <option value="test" selected>test</option>
+  <option value="1">1</option>
+</select>
+
+<script>
+  $('select').on('change', function() {
+    alert('test');
+  });
+</script>
+</html>
